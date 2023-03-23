@@ -1,0 +1,10 @@
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  line-height: 1.44;
+  color: #07484a;
+  @include tablet {
+    font-size: 48px;
+    line-height: 1.29;
+  }
+}

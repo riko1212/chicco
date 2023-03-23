@@ -1,5 +1,10 @@
-@import './base/reset';
 @import './base/common';
+@import './base/reset';
+@import './utils/mixins';
+
+@import './components/container';
+@import './components/title';
+@import './components/btn';
 
 @import './layouts/header';
 @import './layouts/hero';
