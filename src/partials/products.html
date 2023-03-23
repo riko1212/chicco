@@ -1,139 +1,184 @@
 <section class="products">
   <div class="container">
     <h2 class="products__title title">Popular Products</h2>
-    <ul class="cards">
-      <li class="cards__item cards__item--green">
-        <div class="cards__img-wrap">
-          <img
-            class="cards__img"
-            src="./images/armchair-mob.png"
-            alt="armchair"
-            srcset="
-              ./images/armchair-mob.png    1x,
-              ./images/armchair-mob-2x.png 2x
-            "
-          />
-        </div>
+    <div class="products__slider mySwiper">
+      <ul class="cards swiper-wrapper">
+        <li class="swiper-slide cards__item cards__item--green">
+          <div class="cards__img-wrap">
+            <picture>
+              <source
+                srcset="./images/armchair.png 1x, ./images/armchair-2x.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/armchair-mob.png    1x,
+                  ./images/armchair-mob-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="cards__img"
+                src="./images/armchair-mob.png"
+                alt="armchair"
+                srcset="./images/armchair.png 1x, ./images/armchair-2x.png 2x"
+              />
+            </picture>
+          </div>
 
-        <h3 class="cards__title">Armchair</h3>
-        <p class="cards__text">Light single chair</p>
-        <span class="cards__price">$145</span>
-      </li>
-      <li class="cards__item cards__item--blue">
-        <div class="cards__img-wrap">
-          <img
-            class="cards__img"
-            src="./images/armchair-mob.png"
-            alt="premium"
-            srcset="
-              ./images/armchair-mob.png    1x,
-              ./images/armchair-mob-2x.png 2x
-            "
-          />
-        </div>
-        <h3 class="cards__title">Premium Sofa</h3>
-        <p class="cards__text">Light single chair</p>
-        <span class="cards__price">$145</span>
-      </li>
-      <li class="cards__item cards__item--violet">
-        <div class="cards__img-wrap">
-          <img
-            class="cards__img"
-            src="./images/armchair-mob.png"
-            alt="minimal"
-            srcset="
-              ./images/armchair-mob.png    1x,
-              ./images/armchair-mob-2x.png 2x
-            "
-          />
-        </div>
-        <h3 class="cards__title">Minimal Sofa</h3>
-        <p class="cards__text">Light single chair</p>
-        <span class="cards__price">$145</span>
-      </li>
-      <li class="cards__item cards__item--yellow">
-        <div class="cards__img-wrap">
-          <img
-            class="cards__img"
-            src="./images/armchair-mob.png"
-            alt="dining"
-            srcset="
-              ./images/armchair-mob.png    1x,
-              ./images/armchair-mob-2x.png 2x
-            "
-          />
-        </div>
-        <h3 class="cards__title">Dining Chair</h3>
-        <p class="cards__text">Light single chair</p>
-        <span class="cards__price">$145</span>
-      </li>
-      <li class="cards__item cards__item--green">
-        <div class="cards__img-wrap">
-          <img
-            class="cards__img"
-            src="./images/armchair-mob.png"
-            alt="armchair"
-            srcset="
-              ./images/armchair-mob.png    1x,
-              ./images/armchair-mob-2x.png 2x
-            "
-          />
-        </div>
+          <h3 class="cards__title">Armchair</h3>
+          <p class="cards__text">Light single chair</p>
+          <span class="cards__price">$145</span>
+        </li>
+        <li class="swiper-slide cards__item cards__item--blue">
+          <div class="cards__img-wrap">
+            <picture>
+              <source
+                srcset="./images/premium.png 1x, ./images/premium-2x.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/armchair-mob.png    1x,
+                  ./images/armchair-mob-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="cards__img"
+                src="./images/premium.png"
+                alt="premium"
+                srcset="./images/premium.png 1x, ./images/premium-2x.png 2x"
+              />
+            </picture>
+          </div>
+          <h3 class="cards__title">Premium Sofa</h3>
+          <p class="cards__text">Light single chair</p>
+          <span class="cards__price">$145</span>
+        </li>
+        <li class="swiper-slide cards__item cards__item--violet">
+          <div class="cards__img-wrap">
+            <picture>
+              <source
+                srcset="./images/minimal.png 1x, ./images/minimal-2x.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/armchair-mob.png    1x,
+                  ./images/armchair-mob-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="cards__img"
+                src="./images/minimal.png"
+                alt="minimal"
+                srcset="./images/minimal.png 1x, ./images/minimal-2x.png 2x"
+              />
+            </picture>
+          </div>
+          <h3 class="cards__title">Minimal Sofa</h3>
+          <p class="cards__text">Light single chair</p>
+          <span class="cards__price">$145</span>
+        </li>
+        <li class="swiper-slide cards__item cards__item--yellow">
+          <div class="cards__img-wrap">
+            <picture>
+              <source
+                srcset="./images/dining.png 1x, ./images/dining-2x.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/armchair-mob.png    1x,
+                  ./images/armchair-mob-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="cards__img"
+                src="./images/dining.png"
+                alt="dining"
+                srcset="./images/dining.png 1x, ./images/dining-2x.png 2x"
+              />
+            </picture>
+          </div>
+          <h3 class="cards__title">Dining Chair</h3>
+          <p class="cards__text">Light single chair</p>
+          <span class="cards__price">$145</span>
+        </li>
+        <li class="swiper-slide cards__item cards__item--green">
+          <div class="cards__img-wrap">
+            <img
+              class="cards__img"
+              src="./images/armchair-mob.png"
+              alt="armchair"
+              srcset="
+                ./images/armchair-mob.png    1x,
+                ./images/armchair-mob-2x.png 2x
+              "
+            />
+          </div>
 
-        <h3 class="cards__title">Armchair</h3>
-        <p class="cards__text">Light single chair</p>
-        <span class="cards__price">$145</span>
-      </li>
-      <li class="cards__item cards__item--blue">
-        <div class="cards__img-wrap">
-          <img
-            class="cards__img"
-            src="./images/armchair-mob.png"
-            alt="premium"
-            srcset="
-              ./images/armchair-mob.png    1x,
-              ./images/armchair-mob-2x.png 2x
-            "
-          />
-        </div>
-        <h3 class="cards__title">Premium Sofa</h3>
-        <p class="cards__text">Light single chair</p>
-        <span class="cards__price">$145</span>
-      </li>
-      <li class="cards__item cards__item--violet">
-        <div class="cards__img-wrap">
-          <img
-            class="cards__img"
-            src="./images/armchair-mob.png"
-            alt="minimal"
-            srcset="
-              ./images/armchair-mob.png    1x,
-              ./images/armchair-mob-2x.png 2x
-            "
-          />
-        </div>
-        <h3 class="cards__title">Minimal Sofa</h3>
-        <p class="cards__text">Light single chair</p>
-        <span class="cards__price">$145</span>
-      </li>
-      <li class="cards__item cards__item--yellow">
-        <div class="cards__img-wrap">
-          <img
-            class="cards__img"
-            src="./images/armchair-mob.png"
-            alt="dining"
-            srcset="
-              ./images/armchair-mob.png    1x,
-              ./images/armchair-mob-2x.png 2x
-            "
-          />
-        </div>
-        <h3 class="cards__title">Dining Chair</h3>
-        <p class="cards__text">Light single chair</p>
-        <span class="cards__price">$145</span>
-      </li>
-    </ul>
-    <button type="button" class="producrts__btn btn">
+          <h3 class="cards__title">Armchair</h3>
+          <p class="cards__text">Light single chair</p>
+          <span class="cards__price">$145</span>
+        </li>
+        <li class="swiper-slide cards__item cards__item--blue">
+          <div class="cards__img-wrap">
+            <img
+              class="cards__img"
+              src="./images/armchair-mob.png"
+              alt="premium"
+              srcset="
+                ./images/armchair-mob.png    1x,
+                ./images/armchair-mob-2x.png 2x
+              "
+            />
+          </div>
+          <h3 class="cards__title">Premium Sofa</h3>
+          <p class="cards__text">Light single chair</p>
+          <span class="cards__price">$145</span>
+        </li>
+        <li class="swiper-slide cards__item cards__item--violet">
+          <div class="cards__img-wrap">
+            <img
+              class="cards__img"
+              src="./images/armchair-mob.png"
+              alt="minimal"
+              srcset="
+                ./images/armchair-mob.png    1x,
+                ./images/armchair-mob-2x.png 2x
+              "
+            />
+          </div>
+          <h3 class="cards__title">Minimal Sofa</h3>
+          <p class="cards__text">Light single chair</p>
+          <span class="cards__price">$145</span>
+        </li>
+        <li class="swiper-slide cards__item cards__item--yellow">
+          <div class="cards__img-wrap">
+            <img
+              class="cards__img"
+              src="./images/armchair-mob.png"
+              alt="dining"
+              srcset="
+                ./images/armchair-mob.png    1x,
+                ./images/armchair-mob-2x.png 2x
+              "
+            />
+          </div>
+          <h3 class="cards__title">Dining Chair</h3>
+          <p class="cards__text">Light single chair</p>
+          <span class="cards__price">$145</span>
+        </li>
+      </ul>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <button class="producrts__btn btn" type="button">
       Explore all items
       <svg class="producrts__btn-icon" width="20" height="13">
         <use href="./images/icons.svg#icon-arr"></use>

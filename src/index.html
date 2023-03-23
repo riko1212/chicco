@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
     <link href="./sass/index.scss" rel="stylesheet" />
     <script src="./index.js" type="module"></script>
   </head>
@@ -20,5 +25,22 @@
       <include src="./partials/hero.html"></include>
       <include src="./partials/products.html"></include>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 32,
+        loop: true,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          hide: false,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>
